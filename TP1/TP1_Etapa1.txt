@@ -1,8 +1,8 @@
 TP1 Barrios Populares
 
-Desde un archivo CSV (Comma Separated Values) a un base de datos normalizada.
+Desde un archivo CSV (Comma Separated Values) a una base de datos normalizada.
 
-Requisitos:	
+Requisitos:
     1. Crear carpeta de trabajo (Desktop/TP1 - Si no existe, crearla)
     2. Instalar sqlite
     3. Bajar de la web el archivo CSV
@@ -159,11 +159,11 @@ Estamos listos para arrancar.
 
     Ejemplo:
     Tabla Provincia: insert into Provincia(nombre) select distinct provincia from Base order by 1;
-    Tabla Energia_electrica: insert into Provincia(nombre) select distinct energia_electrica from Base order by 1;
-    Tabla Efluentes_cloacales: insert into Provincia(nombre) select distinct efluentes_cloacales from Base order by 1;
+    Tabla Energia_electrica: insert into Energia_electrica(nombre) select distinct energia_electrica from Base order by 1;
+    Tabla Efluentes_cloacales: insert into Efluentes_cloacales(nombre) select distinct efluentes_cloacales from Base order by 1;
     ...
     y lo mismo para agua_corriente, cocina, calefaccion y clasificacion_barrio.
-    Recordar el distincty el order by 1 para que quede todo ordenado.
+    Recordar el distinct y el order by 1 para que quede todo ordenado.
 
 
     Resumen:
@@ -172,6 +172,16 @@ Estamos listos para arrancar.
 
     Que sigue? Normalizacion de localidad, departamento y provincia.
 
+
+===========================================
+== SQLITE Knowledge
+===========================================
+https://www.sqlite.org/lang.html
+https://www.sqlite.org/stricttables.html
+https://www.sqlite.org/datatype3.html
+https://www.sqlitetutorial.net/sqlite-functions/
+https://www.sqlite.org/lang_corefunc.html
+https://www.sqlite.org/pragma.html
 
 
 
